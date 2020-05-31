@@ -53,7 +53,7 @@ module MainHelper
 
         listFiles.each do |key|
 
-          key.each do |key,value| # loop in the content of the file
+          key.each do |key , value| # loop in the content of the file
 
             if key.to_s == 'paragraphs'
 
@@ -62,7 +62,7 @@ module MainHelper
                 line.split("\n").each do |line|       # loop in the lines
                   linePosition += 1;
 
-                  if line =~ (/#{word.downcase}/)     # check if line contains word
+                  if line.downcase =~ (/#{word.downcase}/)     # check if line contains word
                     found = true
                     countLines += 1                   # increment countLines
 
