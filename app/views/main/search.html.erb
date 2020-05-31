@@ -36,12 +36,12 @@
     <div class="container d-flex ">
       <div class="mx-auto text-center" style="margin-top: 220px">
         <h1 class="mx-auto my-0 text-uppercase">Rails finder</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Input word or file to be found.</h2>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Input word and search it in files.</h2>
 
         <div class="row">
           <div class="col-md-10 col-lg-8 mx-auto text-center">
 
-
+            <label class="text-white-50" for="exampleFormControlTextarea1">Path</label>
             <%if @folderExist==false %>
                 <%= text_field_tag :path, params[:path], placeholder: "Enter Path",:class =>"form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 is-invalid"  %>
                 <span class="error text-danger">Folder not found. Please input a valid folder path </span>
@@ -51,7 +51,9 @@
           </div>
         </div>
         <div class="row mt-4">
+
           <div class="col-md-10 col-lg-8 mx-auto text-center">
+            <label class="text-white-50" for="exampleFormControlTextarea1">Word</label>
             <%= text_field_tag :word, params[:word], placeholder: "Enter word",:class =>"form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  %>
           </div>
         </div>

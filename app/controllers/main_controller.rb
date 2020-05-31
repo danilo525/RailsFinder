@@ -36,13 +36,6 @@ class MainController < ApplicationController
       @listFiles = listFiles
     end
 
-    # render layout: "application", template: "search"
-      # redirect_to '/'
-  end
-
-  def searchResult
-
-
   end
 
 end

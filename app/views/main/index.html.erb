@@ -39,13 +39,11 @@
 
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
-<!--          <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="text" placeholder="Enter word" />-->
           <%= text_field_tag :path, params[:path], placeholder: "Enter Path",:class =>"form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  %>
         </div>
       </div>
       <div class="row mt-4">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
-<!--          <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="text" placeholder="Enter folder" />-->
           <%= text_field_tag :word, params[:word], placeholder: "Enter word",:class =>"form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  %>
         </div>
       </div>
@@ -53,29 +51,9 @@
 
       <div class="row mt-4">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-
             <%= submit_tag "Search now" ,:class => "btn btn-primary js-scroll-trigger mt-4"%>
-
         </div>
       </div>
-
-
-
-
-<!--      <div class="row ">-->
-<!--        <div class="col-md-10 col-lg-8 mx-auto text-center">-->
-
-          <%#= link_to 'Search now ', {:action => 'search' }, :class => "btn btn-primary js-scroll-trigger mt-4"%>
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <div class="row mt-4">-->
-<!--        <div class="col-md-10 col-lg-8 mx-auto text-center">-->
-<!--          <textarea class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="text" placeholder="Enter folder" />-->
-<!--        </div>-->
-<!--      </div>-->
-
 
     </div>
   </div>

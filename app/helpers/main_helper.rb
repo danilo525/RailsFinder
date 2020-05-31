@@ -24,15 +24,15 @@ module MainHelper
   def loadSubFolders(rootPath) # Define a method that ret a list subfolders
 
     @allFolders = []
-    @allFolders.push(rootPath)
+    @allFolders.push(rootPath) # add the main folder to the list
 
-    subfolders= Dir.glob rootPath + '/**/*/'
+    subfolders= Dir.glob rootPath + '/**/*/' # return list of subfolders
 
     subfolders.each do |dir|
-      @allFolders.push(dir)
+      @allFolders.push(dir) # add subfolders to the list
     end
 
-    return @allFolders
+    return @allFolders # return list with all folders
   end
 
   def searchForContent(folderPath,filename,word) # Define a method that search the word in the file
@@ -86,7 +86,7 @@ module MainHelper
       end
 
     rescue
-      print "error listFiles null"
+      print "error loading listFiles for folder "
     end
   end
 
